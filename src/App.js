@@ -1,7 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import videoBg from '../src/assets/img/videoBg.mp4'
+import Lottie from 'lottie-react';
 
 import axios from 'axios';
+
+// LottieFiles Icons
+import Thunderstorm from '../src/assets/icons/thunderstorm.json'
 
 // Import Icons
 import {IoMdSunny, IoMdRainy, IoMdCloudy, IoMdSnow, IoMdThunderstorm, IoMdSearch} from 'react-icons/io'
@@ -115,6 +119,7 @@ const App = () => {
       break;
     case 'Thunderstorm':
       icon = <IoMdThunderstorm />
+      // icon = <Lottie animationData={Thunderstorm} className='h-[50%]'/>
       break;
   }
 
